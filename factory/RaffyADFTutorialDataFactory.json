@@ -1,0 +1,9 @@
+{
+	"name": "RaffyADFTutorialDataFactory",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5c80f143-330a-4d4b-82f6-d889795421dd",
+		"tenantId": "e3edbbd7-7608-47b1-be4d-c6640a751f7e"
+	}
+}
