@@ -14,10 +14,6 @@
 			],
 			"sinks": [
 				{
-					"dataset": {
-						"referenceName": "DelimitedText1",
-						"type": "DatasetReference"
-					},
 					"name": "Sink"
 				}
 			],
@@ -29,7 +25,7 @@
 					"name": "AggregateComedyRating"
 				}
 			],
-			"script": "source(output(\n\t\tMovie as string,\n\t\tTitle as string,\n\t\tGenres as string,\n\t\tYear as integer,\n\t\tRating as integer,\n\t\t{rotton tomato} as integer\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> MoviesDB\nMoviesDB filter(toInteger(Year) >= 1910 && toInteger(Year) <= 2000 && rlike(Genres, 'Comedy')\r\n\r\n) ~> FilterYear\nFilterYear aggregate(groupBy(Year),\n\tRating = avg(toInteger(Rating))) ~> AggregateComedyRating\nAggregateComedyRating sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> Sink"
+			"script": "source(output(\n\t\tColumn_1 as string,\n\t\tColumn_2 as string,\n\t\tColumn_3 as string,\n\t\tColumn_4 as string,\n\t\tColumn_5 as string,\n\t\tColumn_6 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> MoviesDB\nMoviesDB filter(toInteger(Year) >= 1910 && toInteger(Year) <= 2000 && rlike(Genres, 'Comedy')\r\n\r\n) ~> FilterYear\nFilterYear aggregate(groupBy(Year),\n\tRating = avg(toInteger(Rating))) ~> AggregateComedyRating\nAggregateComedyRating sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> Sink"
 		}
 	}
 }
