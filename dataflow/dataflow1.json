@@ -18,7 +18,7 @@
 					"name": "Filter1"
 				}
 			],
-			"script": "source(output(\n\t\tMovie as string,\n\t\tTitle as string,\n\t\tGenres as string,\n\t\tYear as integer,\n\t\tRating as integer,\n\t\t{rotton tomato} as integer\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> MoviesDB\nMoviesDB filter(ERROR_FUNCTION('')) ~> Filter1"
+			"script": "source(output(\n\t\tMovie as string,\n\t\tTitle as string,\n\t\tGenres as string,\n\t\tYear as integer,\n\t\tRating as integer,\n\t\t{rotton tomato} as integer\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> MoviesDB\nMoviesDB filter(toInteger(Year) >= 1910 && toInteger(Year) <= 2000 && rlike(Genres, 'Comedy')\r\n\r\n) ~> Filter1"
 		}
 	}
 }
