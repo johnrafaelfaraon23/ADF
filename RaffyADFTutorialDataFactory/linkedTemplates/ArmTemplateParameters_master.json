@@ -23,6 +23,9 @@
 		"RestService1_properties_typeProperties_url": {
 			"value": "https://api.sampleapis.com/coffee/hot"
 		},
+		"RestService2_properties_typeProperties_url": {
+			"value": "https://api.sampleapis.com/avatar/info"
+		},
 		"containerUri": {
 			"value": ""
 		},
