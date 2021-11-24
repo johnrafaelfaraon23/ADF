@@ -1,0 +1,12 @@
+{
+	"name": "RestService2",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://api.sampleapis.com/avatar/info",
+			"enableServerCertificateValidation": false,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
