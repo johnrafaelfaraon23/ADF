@@ -27,7 +27,7 @@
 			"value": "e3edbbd7-7608-47b1-be4d-c6640a751f7e"
 		},
 		"RestService1_properties_typeProperties_url": {
-			"value": "http://dummy.restapiexample.com/api/v1/employees"
+			"value": "http://dummy.restapiexample.com/api/v1/employee/1/"
 		},
 		"containerUri": {
 			"value": ""
