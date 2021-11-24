@@ -10,6 +10,24 @@
 		},
 		"AzureBlobStorage2_connectionString": {
 			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureTableStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://raffyadlsgen2acct.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://undefined.azuredatalakestore.net/webhdfs/v1"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_tenant": {
+			"value": "e3edbbd7-7608-47b1-be4d-c6640a751f7e"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "http://dummy.restapiexample.com/api/v1/employees"
 		}
 	}
 }
