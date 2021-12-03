@@ -1,0 +1,12 @@
+{
+	"name": "RestService3",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://api.sky.blackbaud.com/generalledger/v1/grants HTTP/1.1",
+			"enableServerCertificateValidation": false,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
