@@ -8,7 +8,7 @@
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
-			"relativeUrl": "https://api.sky.blackbaud.com/generalledger/v1/grants HTTP/1.1"
+			"relativeUrl": "GET https://api.sky.blackbaud.com/generalledger/v1/grants HTTP/1.1 Host: api.sky.blackbaud.com Bb-Api-Subscription-Key: 05a001757cdb4e11a33cea4bc9599e06 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjREVjZzVkxIM0FtU1JTbUZqMk04Wm5wWHU3WSJ9.eyJuYW1laWQiOiI1Mjk4NjRjNi0xOWIxLTRmZTAtYjhhMS1hMGRhZDFhOGU5NTIiLCJhcHBsaWNhdGlvbmlkIjoiYTA1NmNhNmItYTNhOC00YWM3LWIzMjUtOTk3NjY2MzA2ZTUyIiwiZW52aXJvbm1lbnRpZCI6InAtUV8xNThPcFhRMG1wd1hIUFlIcGJ5ZyIsImVudmlyb25tZW50bmFtZSI6IlJFN18xNzA4NyBhbmQgRkVfMTcwODcgKFBST0QpIiwibGVnYWxlbnRpdHlpZCI6InAtY19ka21kZWYwRS1sUVlwRFFwWDMyQSIsImxlZ2FsZW50aXR5bmFtZSI6IlVOQ0YiLCJ6b25lIjoicC11c2EwMSIsImlzcyI6Imh0dHBzOi8vb2F1dGgyLnNreS5ibGFja2JhdWQuY29tLyIsImF1ZCI6ImJsYWNrYmF1ZCIsImV4cCI6MTYzODc0MDk1OCwibmJmIjoxNjM4NzM3MzU4fQ.I46EP7HrMZxWvXzvnhyaTbb5NdA4m80b3VvIaWo_6rL6C1LOZoF_SGXhr3BmeqG_EXp_usqIAoCddNCOXaSM-lgVE6gRUNgMd-nSRs5FUGTZltfHkN2I77VDQPTqO45S9UHRhM0nZVo1QTXUM12cBcgPNXWCIs8Qmj5aWc7fg1fRteQtUnQ-Fbv8EzQw8B0e9-bAPg2XvsxCT-pyMMIXpIVMgj7NAgpKN-2y9eTQAmfmqyPwl0VzvOgqlADEwKTb1vUVBFMZx7XR0Z4eXwLvEAtXj59YEpZDS4CW6f1ENGAoexj90Kpjzdp_Ov7fgTPSJ-7dVPjIe0NB_Uwvl2WD_g"
 		},
 		"schema": []
 	}
