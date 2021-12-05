@@ -5,11 +5,11 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://api.sky.blackbaud.com/generalledger/v1/grants",
+			"url": "https://api.sky.blackbaud.com",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Basic",
 			"userName": "john.rafael.faraon@accenture.com",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDQ1NzRCODhCLUNCNTMtNEVGNi04NThDLTFBQTA4MDQ2Q0RBM184OGM2Y2QxNS1hYzlmLTQ0NjktOTRlNi00MThhNjBkNGY4OWIiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDQ1NzRCODhCLUNCNTMtNEVGNi04NThDLTFBQTA4MDQ2Q0RBM181YmM2ZTI4Zi03ZmIzLTQ2ODAtOTMwYS04YjIyMjRhM2YzZjkiDQp9"
 		}
 	}
 }
