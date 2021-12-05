@@ -8,7 +8,7 @@
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
-			"relativeUrl": "https://api.sky.blackbaud.com/generalledger/v1/grants",
+			"relativeUrl": "https://api.sky.blackbaud.com/generalledger/v1/grants=05a001757cdb4e11a33cea4bc9599e06",
 			"tableName": "https://api.sky.blackbaud.com/generalledger/v1/grants"
 		},
 		"schema": []
