@@ -1,0 +1,15 @@
+{
+	"name": "DestinationDataset_t5s",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestService4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"tableName": "https://api.sky.blackbaud.com/generalledger/v1/grants"
+		},
+		"schema": []
+	}
+}
