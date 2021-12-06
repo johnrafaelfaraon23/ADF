@@ -24,15 +24,22 @@
 						"type": "RestSource",
 						"httpRequestTimeout": "00:01:40",
 						"requestInterval": "00.00:00:00.010",
-						"requestMethod": "GET"
+						"requestMethod": "GET",
+						"additionalHeaders": {
+							"Bb-Api-Subscription-Key": "05a001757cdb4e11a33cea4bc9599e06",
+							"Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjREVjZzVkxIM0FtU1JTbUZqMk04Wm5wWHU3WSJ9.eyJuYW1laWQiOiI1Mjk4NjRjNi0xOWIxLTRmZTAtYjhhMS1hMGRhZDFhOGU5NTIiLCJhcHBsaWNhdGlvbmlkIjoiYTA1NmNhNmItYTNhOC00YWM3LWIzMjUtOTk3NjY2MzA2ZTUyIiwiZW52aXJvbm1lbnRpZCI6InAtUV8xNThPcFhRMG1wd1hIUFlIcGJ5ZyIsImVudmlyb25tZW50bmFtZSI6IlJFN18xNzA4NyBhbmQgRkVfMTcwODcgKFBST0QpIiwibGVnYWxlbnRpdHlpZCI6InAtY19ka21kZWYwRS1sUVlwRFFwWDMyQSIsImxlZ2FsZW50aXR5bmFtZSI6IlVOQ0YiLCJ6b25lIjoicC11c2EwMSIsImlzcyI6Imh0dHBzOi8vb2F1dGgyLnNreS5ibGFja2JhdWQuY29tLyIsImF1ZCI6ImJsYWNrYmF1ZCIsImV4cCI6MTYzODc0NTAzNCwibmJmIjoxNjM4NzQxNDM0fQ.hjbkjef_c_UaMSu0Kl9DCXOa0cUA-6gFpb1TPEn54EdpgRJOT0yhzoZiXlnITKpbuuZcqASknpMIXRsEx3nlXLWUvaF4IQD8fmFXZhBNWCYwspjnD0V5RLOGORtajJBUntOfkoQi8cSn2MtMUrqogor68VWrSFKVp6W-AZfOYxZ1wdA4vw0c-PSRBLuBPnjKUwdwUdjlma-MOwIYueMQVP4WNpRAdeZQr2yjWrS9cgxBrxU2-OQsD0lOE-_KNaKpYameX9nPKzuJfcq5KhfYpR1RDDHMKwQnf1hgx8Yo6CoiezeWd0-KslFZHDJPUGr-rxDF-13gnDKSrhc2cH5Fcg"
+						}
 					},
 					"sink": {
 						"type": "RestSink",
-						"httpRequestTimeout": "00:01:40",
-						"requestInterval": 10,
-						"requestMethod": "POST",
-						"writeBatchSize": 10000,
-						"httpCompressionType": "none"
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
 					},
 					"enableStaging": false,
 					"validateDataConsistency": false
@@ -45,7 +52,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DestinationDataset_t5s",
+						"referenceName": "DelimitedText3",
 						"type": "DatasetReference"
 					}
 				]
