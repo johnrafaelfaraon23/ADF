@@ -23,6 +23,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureTableStorage1'"
 		},
+		"RestService3_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'RestService3'"
+		},
+		"RestService4_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'RestService4'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://raffyadlsgen2acct.dfs.core.windows.net/"
@@ -34,6 +42,22 @@
 		"RestService2_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://api.sampleapis.com/avatar/info"
+		},
+		"RestService3_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://developer.sky.blackbaud.com/docs/services/56eb17a0a9db9516c46bff6f/operations/ListGrants/console"
+		},
+		"RestService3_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "john.rafael.faraon@accenture.com"
+		},
+		"RestService4_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://api.sky.blackbaud.com"
+		},
+		"RestService4_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "john.rafael.faraon@accenture.com"
 		},
 		"containerUri": {
 			"type": "string",
@@ -74,6 +98,12 @@
 					"AzureTableStorage1_connectionString": {
 						"value": "[parameters('AzureTableStorage1_connectionString')]"
 					},
+					"RestService3_password": {
+						"value": "[parameters('RestService3_password')]"
+					},
+					"RestService4_password": {
+						"value": "[parameters('RestService4_password')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					},
@@ -82,10 +112,42 @@
 					},
 					"RestService2_properties_typeProperties_url": {
 						"value": "[parameters('RestService2_properties_typeProperties_url')]"
+					},
+					"RestService3_properties_typeProperties_url": {
+						"value": "[parameters('RestService3_properties_typeProperties_url')]"
+					},
+					"RestService3_properties_typeProperties_userName": {
+						"value": "[parameters('RestService3_properties_typeProperties_userName')]"
+					},
+					"RestService4_properties_typeProperties_url": {
+						"value": "[parameters('RestService4_properties_typeProperties_url')]"
+					},
+					"RestService4_properties_typeProperties_userName": {
+						"value": "[parameters('RestService4_properties_typeProperties_userName')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "RaffyADFTutorialDataFactory_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'RaffyADFTutorialDataFactory_ArmTemplate_0')]"
+			]
 		}
 	]
 }
