@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://api.sky.blackbaud.com/generalledger/v1/grants",
+			"url": "https://api.sky.blackbaud.com",
 			"enableServerCertificateValidation": false,
 			"authenticationType": "Anonymous"
 		}
