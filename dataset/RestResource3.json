@@ -8,7 +8,7 @@
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
-			"relativeUrl": "/generalledger/v1/grants"
+			"relativeUrl": "/generalledger/v1/budgets"
 		},
 		"schema": []
 	}
