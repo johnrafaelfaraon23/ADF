@@ -5,6 +5,12 @@
 			"referenceName": "RestService4",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"scenario_id": {
+				"type": "int",
+				"defaultValue": 56
+			}
+		},
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
