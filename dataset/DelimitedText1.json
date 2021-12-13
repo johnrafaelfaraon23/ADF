@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "output.csv",
+				"fileName": "uncf.csv",
 				"fileSystem": "raffyadlsgen2file"
 			},
 			"columnDelimiter": ",",
