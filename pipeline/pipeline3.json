@@ -20,6 +20,10 @@
 						"httpRequestTimeout": "00:01:40",
 						"requestInterval": "00.00:00:00.010",
 						"requestMethod": "GET",
+						"additionalHeaders": {
+							"Bb-Api-Subscription-Key": "05a001757cdb4e11a33cea4bc9599e06",
+							"Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjREVjZzVkxIM0FtU1JTbUZqMk04Wm5wWHU3WSJ9.eyJuYW1laWQiOiI1Mjk4NjRjNi0xOWIxLTRmZTAtYjhhMS1hMGRhZDFhOGU5NTIiLCJhcHBsaWNhdGlvbmlkIjoiYTA1NmNhNmItYTNhOC00YWM3LWIzMjUtOTk3NjY2MzA2ZTUyIiwiZW52aXJvbm1lbnRpZCI6InAtUV8xNThPcFhRMG1wd1hIUFlIcGJ5ZyIsImVudmlyb25tZW50bmFtZSI6IlJFN18xNzA4NyBhbmQgRkVfMTcwODcgKFBST0QpIiwibGVnYWxlbnRpdHlpZCI6InAtY19ka21kZWYwRS1sUVlwRFFwWDMyQSIsImxlZ2FsZW50aXR5bmFtZSI6IlVOQ0YiLCJ6b25lIjoicC11c2EwMSIsImlzcyI6Imh0dHBzOi8vb2F1dGgyLnNreS5ibGFja2JhdWQuY29tLyIsImF1ZCI6ImJsYWNrYmF1ZCIsImV4cCI6MTYzOTQwNDM1NywibmJmIjoxNjM5NDAwNzU3fQ.XjpDcF7SZU7dRC3IQXoFNeK45ABPvA7MJlyxcmw1iHGPBQCRDaayojdLBmnD6kUdkdwvxFKpOTld00FrGXQABvw3C-OD3kkGDftvkTar5G4-OsaH-wh0qlUiiOcfsiZEZHeRbMolkPBCZtYeCXwvk7W21vTL5g8JTXGdBYaTY09hocXTAooLm0C4IpSEhQ7gMIlygmx6FWeTJb-RkASA2NapTRL3UN5iQD9OzlOl5RoShdDO3omgBHgvn7GLlhxLFmpBcwKXqrTTq2PK8fO0SaXD4N83_q-Dz-N9uVSybv2EtWDJTBo9wFeMP9XbuD6_SQmmnqxRI5J5P31ByoX08w"
+						},
 						"paginationRules": {
 							"supportRFC5988": "true"
 						}
