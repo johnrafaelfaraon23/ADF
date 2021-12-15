@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "testuncfoutput.csv",
+				"fileName": "test.csv",
+				"folderPath": "1. Raw",
 				"fileSystem": "testuncfadls"
 			},
 			"columnDelimiter": ",",
