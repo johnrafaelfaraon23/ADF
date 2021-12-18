@@ -5,6 +5,16 @@
 			"referenceName": "RestService4",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"client_id": {
+				"type": "string",
+				"defaultValue": "b562dce2-a2a2-4e30-a3f3-51d8a20222b1"
+			},
+			"client_secret": {
+				"type": "string",
+				"defaultValue": "YBwPjPRtDBmau7mxS3/BcR7lFBCqy/7tu5qO5wkIzKI="
+			}
+		},
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
