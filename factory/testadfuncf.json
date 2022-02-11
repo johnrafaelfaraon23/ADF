@@ -1,0 +1,9 @@
+{
+	"name": "testadfuncf",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2c30f00b-5882-448d-b6fb-37d6113f1abd",
+		"tenantId": "e0793d39-0939-496d-b129-198edd916feb"
+	}
+}
